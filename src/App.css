@@ -1,0 +1,378 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+  }
+#desktop-nav ,nav, .nav-links {
+  display: flex;
+}
+nav {
+  position: sticky; 
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  height: 13vh;
+  background-color: white; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 100; 
+  padding: 0 2rem; 
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+
+.logo:hover {
+  cursor: default;
+}
+
+section {
+    padding-top: 4vh;
+    height: 90vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  }
+
+
+  #profile {
+    display: flex;
+    justify-content: center;
+    gap: 18rem;
+    height: 80vh;
+  }
+  
+  .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  
+  .section__text {
+    align-self: center;
+    text-align: center;
+  }
+  
+  .section__text p {
+    font-weight: 600;
+  }
+  
+  .section__text__p1 {
+    text-align: center;
+  }
+  
+  .section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: 2vh;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.btn-color-1 {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    position: relative;
+    left: 10vh;
+}
+
+.btn-color-1:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Style for Social Media Icons */
+#socials-container-1 {
+  display: flex;
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+.social-media-img {
+  width: 50px; 
+  height: 50px;
+  position: relative;
+  left: 7vh;
+}
+
+.social-media-img:hover {
+  transform: scale(1.1); 
+}
+
+
+/* ======================================about ============================================================== */
+
+#about {
+    position: relative;
+    height: 70vh;
+  }
+.text-container p{
+    font-size: 18px;
+  }
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+.about-containers,
+.about-details-container {
+display: flex;
+}
+  
+  
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
+
+  .details-container {
+   padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+  
+.section-container {
+    gap: 4rem;
+    height: 80%;
+  }
+  
+
+/* ==================================== experience ======================================== */
+  #experience {
+    position: relative;
+    top: 10vh;
+    height: 70vh;
+  }
+
+  .experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 5vh;
+  }
+  
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+
+  .certificates{
+    text-decoration: none;
+    color: rgb(5, 5, 6);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .certificates:hover{
+    text-decoration: none;
+    color: rgb(50, 50, 157);
+  }
+  
+  
+  article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+  
+  article .icon {
+    cursor: default;
+  }
+  .icon{
+    height: 1.5rem;
+  }
+  
+  /* ==========================================projects ==================================== */
+
+#projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  }
+.slider-container {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.project-description{
+  font-size: 1rem;
+  color: #33333394;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+  width: 60vh;
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #458c5f;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project-btn:hover {
+  background: #458c5f;
+  color: black;
+}
+
+.section__text__p1 {
+  font-size: 1rem;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 5px;
+  position: relative;
+
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 30px;
+}
+
+
+  
+
+  /* ============================================contact ============================= */
+  
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 15vh;
+  }
+/* Style for Social Media Icons */
+#contact , #socials-container-2 {
+  display: flex;
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+.socialmediaimg {
+  width: 50px; 
+  height: 50px;
+  position: relative;
+  left: 58vh;
+  bottom: 5vh;
+}
+
+.socialmediaimg:hover {
+  transform: scale(1.1); 
+}
