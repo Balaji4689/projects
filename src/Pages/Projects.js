@@ -31,22 +31,19 @@ const Projects = () => {
       title: "Fuel Delivery",
       description:"Built a fuel delivery web app with React.js and Node.js, enabling fuel orders, station registrations, and delivery tracking.",
       img: project1,
-      link: "https://github.com/Balaji4689?tab=repositories", 
-      live: "https://fuel-frontend.onrender.com", 
+      link: "https://fuel-frontend.onrender.com", 
     },
     {
       title: "Portfolio",
       description:"",
       img: "",
       link: "",
-      live: ""
     },
     {
       title: "Portfolio",
       description:"",
       img: "",
       link: "",
-      live: ""
     },
   ];
   return (
@@ -63,8 +60,7 @@ const Projects = () => {
           <h2 className="project-title">{project.title}</h2>
           <h3 className='project-description'>{project.description}</h3>
                   <div className="btn-container">
-                <a  href={project.link}  className="btn btn-color-2 project-btn"  target="_blank"  rel="noopener noreferrer" >  GitHub  </a>
-                <a  href={project.live}  className="btn btn-color-2 project-btn"  target="_blank"  rel="noopener noreferrer">  Live Demo </a>
+                <a  href={project.link}  className="btn btn-color-2 project-btn"  target="_blank"  rel="noopener noreferrer" > Live Demp </a>
               </div>
         </div>
       ))}
