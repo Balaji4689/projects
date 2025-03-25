@@ -31,19 +31,22 @@ const Projects = () => {
       title: "Fuel Delivery",
       description:"Built a fuel delivery web app with React.js and Node.js, enabling fuel orders, station registrations, and delivery tracking.",
       img: project1,
-      link: "https://github.com/your-repo-link-1",
+      link: "https://github.com/Balaji4689?tab=repositories", 
+      live: "https://fuel-frontend.onrender.com", 
     },
     {
       title: "Portfolio",
       description:"",
       img: "",
-      link: "https://github.com/your-repo-link-2",
+      link: "",
+      live: ""
     },
     {
       title: "Portfolio",
       description:"",
       img: "",
-      link: "https://github.com/your-repo-link-2",
+      link: "",
+      live: ""
     },
   ];
   return (
@@ -59,9 +62,10 @@ const Projects = () => {
           </div>
           <h2 className="project-title">{project.title}</h2>
           <h3 className='project-description'>{project.description}</h3>
-          <div className="btn-container">
-            <a href="" className="btn btn-color-2 project-btn" target="_blank"  > GitHub </a>
-          </div>
+                  <div className="btn-container">
+                <a  href={project.link}  className="btn btn-color-2 project-btn"  target="_blank"  rel="noopener noreferrer" >  GitHub  </a>
+                <a  href={project.live}  className="btn btn-color-2 project-btn"  target="_blank"  rel="noopener noreferrer">  Live Demo </a>
+              </div>
         </div>
       ))}
     </Slider>
